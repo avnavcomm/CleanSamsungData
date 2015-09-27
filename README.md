@@ -37,7 +37,7 @@ the measurement sets are not ordered in the raw data.
 ## Script actions and results
 
 The script "run_analysis.R" takes the raw data and converts it into a cleaned (tidy) dataset,
-selecting 68 out of the 561 measurement variables and reducing the row size from over 10 000 to 
+selecting 66 out of the 561 measurement variables and reducing the row size from over 10 000 to 
 180.  This is done as follows:
 * The training and test datasets are merged (the raw data has these datasets separated into two datasets).
 * Measurements of the mean and standard deviation variables are selected from the table.  
