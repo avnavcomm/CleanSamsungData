@@ -10,9 +10,9 @@ via
 Unzipping the .zip file will produce a directory called "UCI HAR Dataset",
 which is referred to here as DATA_ROOT.  The script "run_analysis.R" is not
 included, and must be downloaded directly from the CleanSamsungData
-github respository. run_analysis.R needs to be executed in the
+github respository. run_analysis() (available after sourcing run_analysis.R) needs to be executed in the
 DATA_ROOT directory for the script to find the dataset files without modifying the script. 
-To ensure you are in DATA_ROOT, you should see the following files (along with run_analysis.R):
+To ensure you are in DATA_ROOT, you should see the following files:
 * README.txt -- original readme file with full description of data collection
 * activity_labels.txt
 * features.txt
@@ -36,7 +36,7 @@ the measurement sets are not ordered in the raw data.
 
 ## Script actions and results
 
-The script "run_analysis.R" takes the raw data and converts it into a cleaned (tidy) dataset,
+The script "run_analysis()" (available by sourcing "run_analysis.R") takes the raw data and converts it into a cleaned (tidy) dataset,
 selecting 66 out of the 561 measurement variables and reducing the row size from over 10 000 to 
 180.  This is done as follows:
 * The training and test datasets are merged (the raw data has these datasets separated into two datasets).
@@ -67,6 +67,7 @@ Must have "reshape2" and "plyr" packages installed.
 * Ensure your working directory is DATA_ROOT. 
 * Source the file (in the R environment) using
 > source("run_analysis.R")
+  * If run_analysis.R is not in DATA_ROOT, make sure you give the complete path to the script. 
 * Then run the script (in R)  using
 > run_analysis()
 
