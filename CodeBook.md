@@ -15,6 +15,7 @@ measurement for each of the 30 subjects for each of the six activities (giving
  WALKING_UPSTAIRS | 2 |  V1 | V2 | ...
   ... | | | |
  WALKING_UPSTAIRS | 30 | V1 | V2 |  ...
+ ... | | | |
 
 ## Column Names
 
@@ -27,7 +28,7 @@ Nomenclature:
 * Names that begin with "t", such as tBodyAcc.X.mean, are measurements in the time domain, and "f" in the frequency domain.
 * The measurements represent either linear acceleration (denoted with an "Acc"), angular velocity ("Gyro"), or the time derivative of those quantities (represented with the term "Jerk", e.g., AccJerk or GyroJerk).  
 * The measurements are divided into body and gravity components, given by "Body" or "Gravity", respectively. 
-* All acclelerations ("Acc") are given in standard gravity units *g*, and they gryo measurements are in radian/sec.  Jerks are given in units of *g(/sec or radian/sec/sec.
+* All acclelerations ("Acc") are given in standard gravity units *g*, and they gryo measurements are in radian/sec.  Jerks are given in units of *g*/sec or radian/sec/sec.
 * The accelerometer and gyroscope gave triaxial information, so measurements are either labeled, X, Y, Z, or Mag for the X direction, Y direction, Z direction, or the magnitude (respectively) of the vector quantity. 
 
 
